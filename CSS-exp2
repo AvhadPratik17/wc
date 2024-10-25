@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Selectors Example</title>
+    <style>
+        /* Element Selector */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        /* ID Selector */
+        #main-heading {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .nav-link {
+            color: #555;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        /* Pseudo-Class Selector */
+        .nav-link:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        /* Descendant Selector */
+        nav ul li {
+            display: inline;
+        }
+
+        /* Attribute Selector */
+        input[type="text"], input[type="email"] {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Pseudo-element Selector */
+        footer::before {
+            content: "— ";
+        }
+
+        /* Additional Styling */
+        .content-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="main-heading">Welcome to Our Stylish Page</h1>
+
+<nav>
+    <ul>
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content-section">
+    <h2>About Us</h2>
+    <p>We are a leading company in web development, dedicated to providing quality services to our clients. Our team of experienced developers and designers work tirelessly to deliver exceptional results.</p>
+</div>
+
+<div class="content-section">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>Mobile App Development</li>
+        <li>Digital Marketing</li>
+        <li>UI/UX Design</li>
+        <li>SEO Services</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h2>Client Testimonials</h2>
+    <p>"The team at Stylish Page delivered our project on time and exceeded our expectations!" - Client A</p>
+    <p>"We saw a significant increase in traffic after implementing their SEO services." - Client B</p>
+</div>
+
+<h2>Sign Up Form</h2>
+<form action="#" method="post">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Your name" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Your email" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<footer>
+    <p>&copy; 2024 Stylish Page</p>
+</footer>
+
+</body>
+</html>
